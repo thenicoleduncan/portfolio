@@ -1,52 +1,36 @@
-/* --- STYLES FOR ALL PAGES --- */
 body {
   font-family: 'Raleway', sans-serif;
-  /* background-image: url("../imgs/ignasi_pattern_s.png"); */
-  background-color: #F0FFFF;
+    background-color: #F0FFFF;
 }
 
 html {
-  /* Positioning */
   position: relative;
-
-  /* Box-model */
   min-height: 100%;
 }
 
-/* add space for fixed nav */
 main {
   margin: 80px 0;
 }
 
-/* create styles for use for all white main boxes */
 .block {
-  /* background-color: #fff; */
-
   padding: 30px;
   margin-bottom: 30px;
 }
 
 .block-header {
-  /* Typography */
   color: #e65c00;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 
-/* NAV START */
 #logo {
   font-family: 'Raleway', sans-serif;
-
-  /* Typography */
   font-size: 100px;
   font-weight: bold;
   color: #2f4f4f;
 
-  /* Visual */
-  /* background: #4aaaa5; */
 }
 
-/* override bootstrap hover color and border */
 .navbar-default .navbar-nav > li > a:hover {
   color: #2f4f4f;
 }
@@ -56,129 +40,118 @@ main {
   border: none;
 }
 
-/* media query for nav background color change */
 @media only screen and (max-width: 767px) {
   #logo {
     font-size: 50px;
   }
 }
-/* END NAV */
+
+@media only screen and (max-width: 767px) {
+  .block {
+    text-align: center;
+    
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #about-image {
+    float: none !important;
+    /* margin: 0 auto; */
+  }
+}
 
 
-/* CONNECT W/ ME CSS */
 .connect-header {
-  /* Typography */
   font-size: 25px;
 }
 
 .connect-photo {
-  /* Box-model */
   width: 55px;
   height: 55px;
 }
 
 #images {
-  /* Box-model */
   padding-top: 15px;
-
-  /* Typography */
   text-align: center;
 }
-/* END CONNECT W/ ME */
 
-
-/* BEGIN FOOTER */
 .footer {
-  /* Positioning */
   position: absolute;
   bottom: 0;
-
-  /* Box-model */
   width: 100%;
   height: 60px;
-
-  /* Visual */
-  /* background-color: #666; */
 }
 
 .text-muted-footer {
-  /* Box-model */
   margin-top: 15px;
-
-  /* Typography */
   color: #fff;
 }
 
 .two-toned-footer-color {
-  /* Box-model */
   height: 6px;
   padding-top: 3px;
-
-  /* Visual */
-  /* background-color: #4aaaa5; */
 }
-/* END FOOTER */
-/* --- END STYLES FOR ALL PAGES --- */
 
-/* --- PAGE-SPECIFIC STYLES --- */
-/* ABOUT-ME PAGE */
 .about-me-header {
-  /* Positioning */
   margin-bottom: 33px;
   font-family: 'Raleway', sans-serif;
-
-  /* Typography */
   font-size: 32px;
   font-weight: bold;
   color: #4aaaa5;
 }
 
 #about-image {
-  /* Positioning */
   float: left;
-
-  /* Box-model */
   width: 200px;
   margin: 0 20px 10px 0;
 }
-/* END ABOUT-ME PAGE */
 
 
-/* PORTFOLIO PAGE */
 .port-image {
   margin: 20px auto;
 }
 
+.port-image:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 h3 {
   color: #2f4f4f;
+  text-align: center;
+  font-size: medium;
 }
+
 
 .extra {
   color: #2f4f4f;
+  font-size: small;
 }
-/* END PORTFOLIO PAGE */
 
-
-/* CONTACT FORM PAGE  */
 .form-control {
-  /* give input boxes right angles */
   border-radius: 0;
-
-  /* keep from horizontally resizing text area */
   min-width: 100%;
   max-width: 100%;
 }
 
 .submit-btn {
-  /* Box-model */
   padding: 15px 30px;
   font-size: 16px;
   font-weight: lighter;
-
-  /* Typography */
   color: #fff;
-
-  /* Visual */
   background-color: #e65c00;
   border: 0;
 }
@@ -187,4 +160,33 @@ h3 {
   opacity: .7;
 }
 
-/* END CONTACT FORM PAGE */
+
+.c {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.social-icon-box::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.social-icon-box {
+  text-align: center !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .social-icon-box {
+  text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .or-call {
+  text-align: center !important;
+  }
+}
+
+
