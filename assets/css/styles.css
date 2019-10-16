@@ -1,7 +1,8 @@
 /* --- STYLES FOR ALL PAGES --- */
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: url("../imgs/ignasi_pattern_s.png");
+  /* background-image: url("../imgs/ignasi_pattern_s.png"); */
+  background-color: #F0FFFF;
 }
 
 html {
@@ -19,7 +20,7 @@ main {
 
 /* create styles for use for all white main boxes */
 .block {
-  background-color: #fff;
+  /* background-color: #fff; */
 
   padding: 30px;
   margin-bottom: 30px;
@@ -27,7 +28,7 @@ main {
 
 .block-header {
   /* Typography */
-  color: #4aaaa5;
+  color: #e65c00;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
@@ -37,28 +38,28 @@ main {
   font-family: 'Raleway', sans-serif;
 
   /* Typography */
-  font-size: 24px;
+  font-size: 100px;
   font-weight: bold;
-  color: #fff;
+  color: #2f4f4f;
 
   /* Visual */
-  background: #4aaaa5;
+  /* background: #4aaaa5; */
 }
 
 /* override bootstrap hover color and border */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #4aaaa5;
+  color: #2f4f4f;
 }
 
 .navbar {
-  background: white;
+  background: #F0FFFF !important;
   border: none;
 }
 
 /* media query for nav background color change */
 @media only screen and (max-width: 767px) {
-  .navbar-header {
-    background-color: #4aaaa5;
+  #logo {
+    font-size: 50px;
   }
 }
 /* END NAV */
@@ -97,7 +98,7 @@ main {
   height: 60px;
 
   /* Visual */
-  background-color: #666;
+  /* background-color: #666; */
 }
 
 .text-muted-footer {
@@ -114,7 +115,7 @@ main {
   padding-top: 3px;
 
   /* Visual */
-  background-color: #4aaaa5;
+  /* background-color: #4aaaa5; */
 }
 /* END FOOTER */
 /* --- END STYLES FOR ALL PAGES --- */
@@ -147,6 +148,14 @@ main {
 .port-image {
   margin: 20px auto;
 }
+
+h3 {
+  color: #2f4f4f;
+}
+
+.extra {
+  color: #2f4f4f;
+}
 /* END PORTFOLIO PAGE */
 
 
@@ -170,7 +179,7 @@ main {
   color: #fff;
 
   /* Visual */
-  background-color: #4aaaa5;
+  background-color: #e65c00;
   border: 0;
 }
 
